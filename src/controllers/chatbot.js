@@ -14,19 +14,19 @@ const Chatbox = class {
 
   render() {
     return `
-    <div class="row">
-      <div class="col-12">${viewNav()}</div>
-    </div>
-    <div class="row">
-      <div class="col-2">${viewListBots()}</div>
-        <div class="col-10 overflow-hidden bg-gradient">
-          <div class="conversation">
-            <div class="col-6">${viewMessageBots()}</div>
-            <div class="col-6">${viewMessage()}</div>
-              <div class="input-group">${viewBar()}</div>
-          </div> 
-        </div>
-    </div>   
+      <div class="row">
+        <div class="col-12">${viewNav()}</div>
+      </div>
+      <div class="row">
+        <div class="col-2">${viewListBots()}</div>
+          <div class="col-10 overflow-hidden bg-gradient">
+            <div class="conversation">
+              <div class="col-6">${viewMessageBots()}</div>
+              <div class="col-6">${viewMessage()}</div>
+                <div class="input-group">${viewBar()}</div>
+            </div> 
+          </div>
+      </div>   
     `;
   }
 
