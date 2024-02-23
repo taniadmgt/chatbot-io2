@@ -1,4 +1,4 @@
-export default (data) => {
+export default () => {
   const {
     name: { first, last },
     picture: { large }, 
