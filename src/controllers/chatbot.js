@@ -7,7 +7,7 @@ import viewMessageBots from '../views/chatbot/message-bots';
 const Chatbox = class {
   constructor(params) {
     this.el = document.querySelector('#root');
-    this.params = params
+    this.params = params;
 
     this.run();
   }
@@ -30,33 +30,31 @@ const Chatbox = class {
     `;
   }
 
-
   onKeyUp() {
     const elInputSearch = document.querySelector('.input-search');
     const elDisplayInput = document.querySelector('div-display');
 
     elInputSearch.addEventListener('keyup', (event) => {
       const keyWord = elInputSearch.value;
-      if (event.key = "Enter" || event.key === 13) {
-        const newDiv = document.createElement("div");
+      if (elInputSearch.value = keyWord) {
+        const newDiv = document.createElement('div');
         newDiv.id = `input${this.i}`;
         newDiv.innerHTML = keyWord;
         elDisplayInput.appendChild(newDiv);
-        elInputSearch.value = '';  
-        this.sayHello (keyWord);  
-        this.i +=1; 
+        elInputSearch.value = '';
+        this.sayHello(keyWord);
+        this.i += 1;
       }
     });
-
   }
 
-  sayHello (input) {
+  sayHello(input) {
     const elDisplayInput = document.querySelector('div-display');
 
-    if ( input === "salutation" ) {
-      const newDiv = document.createElement("div");
+    if (input === 'salutation') {
+      const newDiv = document.createElement('div');
       newDiv.id = `response${this.i}`;
-      newDiv.innerHTML = "salutation";
+      newDiv.innerHTML = 'salutation';
       elDisplayInput.appendChild(newDiv);
     }
   }
@@ -67,4 +65,4 @@ const Chatbox = class {
   }
 };
 
-export default chatbot;
+export default Chatbox;

@@ -1,12 +1,4 @@
-export default () => {
-  const {
-    name: { first, last },
-    picture: { large }, 
-    description: { string },
-  } = data.user
-};
-
-return `
+export default () => (`
 <div class="row col-12">
 <div class="row card col-3" id="chatlist">
   <ol class="list-group list-group-flush">
@@ -29,4 +21,4 @@ return `
       </div>
     </li>
   </ol>
-`
+`);
