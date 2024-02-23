@@ -1,5 +1,15 @@
-import './index.scss';
+import './index.css'; 
 
-const hello = 'hello';
+const routes = [{
+  url : './chatbox',
+  controller : chatbot, 
 
-console.log(hello);
+  url : './nav',
+  controller : chatbot,
+
+  url: './bots',
+  controller : chatbot,
+
+  url: './input',
+  controller : chatbot,
+}]

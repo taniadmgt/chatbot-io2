@@ -1,3 +1,9 @@
+import chatbot from './views/chatbot';
+import input from './views/input';
+import navbar from './views/nav';
+import bots from './views/bots';
+
+import weather from weather; 
 
 const Search = class {
   constructor() {
@@ -39,6 +45,14 @@ const Search = class {
 
   render() {
     return `
+    <header>
+      ${navbar()}
+    </header>
+    <main>
+      ${bots()}   
+      ${chatbox()}
+      ${input()}  
+    </main>
     `;
   }
 
@@ -48,4 +62,4 @@ const Search = class {
   }
 };
 
-export default Search;
+export default chatbot;
