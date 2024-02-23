@@ -1,7 +1,7 @@
 import Router from './router';
 import Chatbot from './controllers/chatbot';
 
-import './index.css';
+import './index.scss';
 
 const routes = [{
   url: '/chatbot',
