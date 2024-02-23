@@ -1,17 +1,35 @@
-import chatbot from './views/chatbot';
-import input from './views/input';
-import navbar from './views/nav';
-import bots from './views/bots';
+import viewNav from '../views/nav';
+import viewBar from '../views/bar';
+import viewListBots from '../views/chatbot/list-bots';
+import viewMessage from '../views/chatbot/message-me';
+import viewMessageBots from '../views/chatbot/message-bots';
 
-import weather from weather; 
-
-const Search = class {
-  constructor() {
+const Chatbox = class {
+  constructor(params) {
     this.el = document.querySelector('#root');
-    this.i = 0 ; 
+    this.params = params
 
     this.run();
   }
+
+  render() {
+    return `
+    <div class="row">
+      <div class="col-12">${viewNav()}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">${viewListBots()}</div>
+        <div class="col-10 overflow-hidden bg-gradient">
+          <div class="conversation">
+            <div class="col-6">${viewMessageBots()}</div>
+            <div class="col-6">${viewMessage()}</div>
+              <div class="input-group">${viewBar()}</div>
+          </div> 
+        </div>
+    </div>   
+    `;
+  }
+
 
   onKeyUp() {
     const elInputSearch = document.querySelector('.input-search');
@@ -41,19 +59,6 @@ const Search = class {
       newDiv.innerHTML = "salutation";
       elDisplayInput.appendChild(newDiv);
     }
-  }
-
-  render() {
-    return `
-    <header>
-      ${navbar()}
-    </header>
-    <main>
-      ${bots()}   
-      ${chatbox()}
-      ${input()}  
-    </main>
-    `;
   }
 
   run() {

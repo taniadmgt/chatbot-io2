@@ -1,5 +1,3 @@
-import ViewNav from './nav';
-
 return `
 <div class="col-9" id="chatbox">
   <div id="msg">

@@ -1,15 +1,11 @@
-import './index.css'; 
+import './index.scss'; 
+import Router from './router';
+import Chatbox from './controllers/chatbot';
+
 
 const routes = [{
-  url : './chatbox',
+  url : './chatbot',
   controller : chatbot, 
-
-  url : './nav',
-  controller : chatbot,
-
-  url: './bots',
-  controller : chatbot,
-
-  url: './input',
-  controller : chatbot,
 }]
+
+new Router(routes); 

@@ -7,3 +7,36 @@
 .inputtext {
   height : 80vh;
 }; 
+
+.card-body {
+  width: 50% !important;
+}
+
+#chatlist {
+  width: 25%;
+  margin-bottom: 75%;
+}
+
+.input-group {
+  margin-right: 1.5%;
+}
+
+.container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+#benoit {
+  display : flex; 
+  flex: 2; 
+  gap: 25px;
+  margin-top: 4%;
+}
+
+#msg {
+  margin-left: 4%;
+}
