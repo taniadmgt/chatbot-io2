@@ -36,7 +36,7 @@ const Chatbox = class {
 
     elInputSearch.addEventListener('keyup', (event) => {
       const keyWord = elInputSearch.value;
-      if (elInputSearch.value = keyWord) {
+      if (event.keyWord === keyWord) {
         const newDiv = document.createElement('div');
         newDiv.id = `input${this.i}`;
         newDiv.innerHTML = keyWord;
