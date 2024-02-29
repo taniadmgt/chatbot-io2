@@ -4,7 +4,7 @@ import Chatbot from './controllers/chatbot';
 import './index.scss';
 
 const routes = [{
-  url: '/chatbot',
+  url: '/',
   controller: Chatbot
 }];
 

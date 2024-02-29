@@ -1,6 +1,10 @@
+body {
+  background-color: aquamarine;
+}
+
 .input-group {
   height : 80vh;
-}; 
+};
 
 .card-body {
   width: 50% !important;
@@ -25,8 +29,8 @@
 }
 
 #benoit {
-  display : flex; 
-  flex: 2; 
+  display : flex;
+  flex: 2;
   gap: 25px;
   margin-top: 4%;
 }
