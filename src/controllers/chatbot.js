@@ -18,10 +18,10 @@ const Chatbox = class {
         <div class="col-12">${viewNav()}</div>
       </div>
       <div class="row">
-        <div class="col-2">
+        <div class="col-3">
           ${viewListBots()}
         </div>
-        <div class="col-10 overflow-hidden bg-gradient">
+        <div class="col-9 overflow-hidden bg-gradient">
           ${viewMessageBots()}
           ${viewMessage()}
           ${viewBar()}

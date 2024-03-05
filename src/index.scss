@@ -1,5 +1,6 @@
 body {
-  background-color: aquamarine;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .input-group {
@@ -8,11 +9,6 @@ body {
 
 .card-body {
   width: 50% !important;
-}
-
-#chatlist {
-  width: 25%;
-  margin-bottom: 75%;
 }
 
 .input-group {
@@ -28,12 +24,6 @@ body {
   justify-content: space-between;
 }
 
-#benoit {
-  display : flex;
-  flex: 2;
-  gap: 25px;
-  margin-top: 4%;
-}
 
 #msg {
   margin-left: 4%;
